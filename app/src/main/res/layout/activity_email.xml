@@ -9,7 +9,7 @@
     tools:context=".EmailActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/emailLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -40,9 +40,9 @@
         android:gravity="center"
         android:text="Flyria will send an email for verification"
         android:textColor="#555252"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintEnd_toEndOf="@+id/emailLabel"
+        app:layout_constraintStart_toStartOf="@+id/emailLabel"
+        app:layout_constraintTop_toBottomOf="@+id/emailLabel" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
