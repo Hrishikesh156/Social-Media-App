@@ -6,24 +6,24 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.social_media_app.databinding.ActivityEmailBinding;
+import com.example.social_media_app.databinding.ActivityPhoneNumberBinding;
 
-public class EmailActivity extends AppCompatActivity {
+public class PhoneNumberActivity extends AppCompatActivity {
 
-    ActivityEmailBinding binding;
+    ActivityPhoneNumberBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityEmailBinding.inflate(getLayoutInflater());
+        binding = ActivityPhoneNumberBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         getSupportActionBar().hide();
 
         binding.continueBtn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                Intent intent= new Intent(EmailActivity.this, OTPActivity.class);
-                intent.putExtra("EmailID", binding.mailBox.getText().toString());
+                Intent intent= new Intent(PhoneNumberActivity.this, OTPActivity.class);
+                intent.putExtra("phoneNumber", binding.phoneBox.getText().toString());
                 startActivity(intent);
             }
 
