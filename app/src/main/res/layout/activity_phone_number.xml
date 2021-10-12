@@ -6,14 +6,14 @@
     android:layout_height="match_parent"
     android:background="#f9f9f9"
     android:padding="10dp"
-    tools:context=".EmailActivity">
+    tools:context=".PhoneNumberActivity">
 
     <TextView
-        android:id="@+id/emailLabel"
+        android:id="@+id/phoneLbl"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Verify Your Email ID"
+        android:text="Verify Your Phone Number"
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -38,11 +38,11 @@
         android:layout_marginTop="8dp"
         android:foregroundTint="#555252"
         android:gravity="center"
-        android:text="Flyria will send an email for verification"
+        android:text="Flyria will send OTP for verification"
         android:textColor="#555252"
-        app:layout_constraintEnd_toEndOf="@+id/emailLabel"
-        app:layout_constraintStart_toStartOf="@+id/emailLabel"
-        app:layout_constraintTop_toBottomOf="@+id/emailLabel" />
+        app:layout_constraintEnd_toEndOf="@+id/phoneLbl"
+        app:layout_constraintStart_toStartOf="@+id/phoneLbl"
+        app:layout_constraintTop_toBottomOf="@+id/phoneLbl" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -62,13 +62,14 @@
             android:orientation="vertical">
 
             <EditText
-                android:id="@+id/mailBox"
+                android:id="@+id/phoneBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/textbox_outline"
                 android:ems="10"
-                android:hint="Type your E-mail ID"
+                android:hint="Type your Phone Number"
                 android:inputType="textPersonName"
+                android:minHeight="48dp"
                 android:padding="10dp" />
 
             <Button

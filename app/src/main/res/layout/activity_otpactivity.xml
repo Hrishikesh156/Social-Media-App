@@ -6,14 +6,14 @@
     android:layout_height="match_parent"
     android:background="#f9f9f9"
     android:padding="10dp"
-    tools:context=".EmailActivity">
+    tools:context=".OTPActivity">
 
     <TextView
-        android:id="@+id/emailLabel"
-        android:layout_width="333dp"
-        android:layout_height="32dp"
+        android:id="@+id/phoneLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Verify abc@gmail.com"
+        android:text="Verify +919812121212"
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -38,11 +38,11 @@
         android:layout_marginTop="8dp"
         android:foregroundTint="#555252"
         android:gravity="center"
-        android:text="Enter OTP to verify your E-mail ID"
+        android:text="Enter OTP to verify your Phone Number"
         android:textColor="#555252"
-        app:layout_constraintEnd_toEndOf="@+id/emailLabel"
-        app:layout_constraintStart_toStartOf="@+id/emailLabel"
-        app:layout_constraintTop_toBottomOf="@+id/emailLabel" />
+        app:layout_constraintEnd_toEndOf="@+id/phoneLbl"
+        app:layout_constraintStart_toStartOf="@+id/phoneLbl"
+        app:layout_constraintTop_toBottomOf="@+id/phoneLbl" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -69,7 +69,7 @@
                 android:layout_marginTop="5dp"
                 android:inputType="number"
                 android:itemBackground="@color/grey"
-                android:textColor="@android:color/white"
+
                 app:OtpItemCount="6"
                 app:OtpLineColor="@color/green"
                 app:OtpViewType="line" />
